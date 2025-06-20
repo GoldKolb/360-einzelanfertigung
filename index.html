@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>360° Schmuck-Viewer</title>
+    <link rel="stylesheet" href="magicspin.css">
+    <style>
+        body {
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #viewer {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer">
+        <div class="MagicSpin"
+             data-folder="images/"
+             data-filename="EinzelA{frame}.jpg"
+             data-frames="12"
+             data-autoplay="true"
+             data-loop="true"
+             data-mousezoom="false"
+             data-preload="true">
+        </div>
+    </div>
+
+    <script src="magicspin.js"></script>
+</body>
+</html>
